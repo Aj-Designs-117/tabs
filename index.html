@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="wrapper">
+
+        <div class="sidebar-materials">
+            <div class="sidebar-content-m">
+                <a data-tab-target="#materia1">Materia1</a>
+                <a data-tab-target="#materia2">Materia2</a>
+                <a data-tab-target="#materia3">Materia3</a>
+                <a data-tab-target="#materia4">Materia4</a>
+            </div>
+        </div>
+
+        <div class="viewer">
+            <!-- Asi declaras para que las vistas se mantenga ocultas. 
+                Dentro de esas cajas pondras la informacion.
+                Si vas hacer una iteracion de tus datos, recomiento que todo los valores los manejes dinamicos.
+            -->
+            <div id="materia1" data-tab-content>
+                <div class="viewer-tab-content">
+                    <h1>Materia 1</h1>
+                </div>
+            </div>
+            <div id="materia2" data-tab-content>
+                <div class="viewer-tab-content">
+                    <h1>Materia 2</h1>
+                </div>
+            </div>
+
+            <div id="objGeneral" data-tab-content>
+                <div class="viewer-tab-content">
+                    <h1>Objetivo General</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-others">
+            <div class="sidebar-content-o">
+                <a data-tab-target="#objGeneral">Objetivo General</a>
+                <a data-tab-target="#escribe los nombres de tus contenedores">Perfil de Ingreso</a>
+                <a data-tab-target="#escribe los nombres de tus contenedores">Perfil de Egreso</a>
+                <a data-tab-target="#escribe los nombres de tus contenedores">Objetivo Educacional</a>
+                <a data-tab-target="#escribe los nombres de tus contenedores">Requisitos para Ingresar</a>
+                <a data-tab-target="#escribe los nombres de tus contenedores">Lenguas Extrajeras</a>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
